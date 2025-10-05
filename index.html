@@ -1,76 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Simple Movie Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieflix - Watch Movies & TV Shows Online</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav>
-    <div class="logo">SimpleFlix</div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Movies</a></li>
-      <li><a href="#">Series</a></li>
-      <li><a href="#">My List</a></li>
-    </ul>
-    <input type="text" placeholder="Search" />
-  </nav>
+    <header id="header">
+        <div class="logo">MOVIEFLIX</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#series">TV Shows</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#new">New & Popular</a></li>
+                <li><a href="#list">My List</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header class="hero">
-    <h1>The Dark Knight</h1>
-    <p>Watch the legendary superhero thriller now.</p>
-    <div class="buttons">
-      <a href="#">Play</a>
-      <a href="#">More Info</a>
-    </div>
-  </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <p>Watch anywhere. Cancel anytime. Ready to watch? Start your journey into endless entertainment today.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">▶ Play Now</button>
+                <button class="btn btn-secondary">ℹ More Info</button>
+            </div>
+        </div>
+    </section>
 
-  <section class="movies">
-    <article>
-      <div class="poster-container">
-        <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="The Dark Knight Poster" />
-      </div>
-      <h3>The Dark Knight</h3>
-    </article>
-    <article>
-      <div class="poster-container">
-        <img src="https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg" alt="Inception Poster" />
-      </div>
-      <h3>Inception</h3>
-    </article>
-    <article>
-      <div class="poster-container">
-        <img src="https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg" alt="Interstellar Poster" />
-      </div>
-      <h3>Interstellar</h3>
-    </article>
-    <article>
-      <div class="poster-container">
-        <img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="Joker Poster" />
-      </div>
-      <h3>Joker</h3>
-    </article>
-    <article>
-      <div class="poster-container">
-        <img src="https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg" alt="Fight Club Poster" />
-      </div>
-      <h3>Fight Club</h3>
-    </article>
-    <article>
-      <div class="poster-container">
-        <img src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Avengers Endgame Poster" />
-      </div>
-      <h3>Avengers: Endgame</h3>
-    </article>
-  </section>
+    <section class="movie-section">
+        <h2 class="section-title">Trending Now</h2>
+        <div class="movie-row">
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_FMjpg_UX1000_.jpg"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Interstellar</div>
+                    <div class="movie-info">2014 • 2h 49m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Pulp Fiction</div>
+                    <div class="movie-info">1994 • 2h 34m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">The Dark Knight</div>
+                    <div class="movie-info">2008 • 2h 32m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Inception</div>
+                    <div class="movie-info">2010 • 2h 28m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">The Shawshank Redemption</div>
+                    <div class="movie-info">1994 • 2h 22m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">The Godfather</div>
+                    <div class="movie-info">1972 • 2h 55m</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <a href="#">About</a> | 
-    <a href="#">Contact</a> | 
-    <a href="#">Terms</a>
-    <p>&copy; 2025 SimpleFlix</p>
-  </footer>
+    <section class="movie-section">
+        <h2 class="section-title">Popular on Movieflix</h2>
+        <div class="movie-row">
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">City Lights</div>
+                    <div class="movie-info">2024 • 2h 01m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Ocean's Call</div>
+                    <div class="movie-info">2024 • 1h 48m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Future World</div>
+                    <div class="movie-info">2024 • 2h 18m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Mountain Peak</div>
+                    <div class="movie-info">2024 • 1h 55m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Alpine Adventure</div>
+                    <div class="movie-info">2024 • 2h 12m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Horizon</div>
+                    <div class="movie-info">2024 • 1h 42m</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="movie-section">
+        <h2 class="section-title">Drama Collection</h2>
+        <div class="movie-row">
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Neon Nights</div>
+                    <div class="movie-info">2024 • 2h 05m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Winter's Tale</div>
+                    <div class="movie-info">2024 • 1h 50m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Sunset Boulevard</div>
+                    <div class="movie-info">2024 • 2h 20m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Golden Hour</div>
+                    <div class="movie-info">2024 • 1h 38m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Forest Path</div>
+                    <div class="movie-info">2024 • 2h 03m</div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop"
+                    alt="Movie">
+                <div class="movie-overlay">
+                    <div class="movie-title">Portrait</div>
+                    <div class="movie-info">2024 • 1h 47m</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                        <li><a href="#">Corporate Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Movieflix, Inc. All rights reserved.</p>
+                <p>Experience premium entertainment streaming with thousands of movies and TV shows at your fingertips.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
